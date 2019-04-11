@@ -1,0 +1,13 @@
+{
+"companyName": "TioFih",
+"productName": "WebGL Test",
+"dataUrl": "Build With Effects.data.unityweb",
+"wasmCodeUrl": "Build With Effects.wasm.code.unityweb",
+"wasmFrameworkUrl": "Build With Effects.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}

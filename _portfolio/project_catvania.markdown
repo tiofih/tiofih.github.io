@@ -6,8 +6,6 @@ img: /img/12.jpg
 ---
 
 <script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "/Build/CatVania/Build/Builds.json", {
-      onProgress: UnityProgress
-    });
-  </script>
-<div id="gameContainer" style="width: 960px; height: 600px; margin: auto"></div>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "/Build/CatVania/Catvania.json");
+</script>
+<div id="gameContainer" style="width: 800px; height: 600px; margin: auto"></div>

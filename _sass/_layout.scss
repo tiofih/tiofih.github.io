@@ -71,7 +71,26 @@
   display: flex;
   justify-content: center;
   gap: 14px;
-  margin-top: 24px;
+  margin-top: 28px;
+}
+.contacticon a {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  transition: all 0.18s;
+}
+.contacticon a:hover {
+  color: var(--text);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  transform: translateY(-2px);
+  text-decoration: none;
 }
 .social {
   width: 44px;
@@ -193,11 +212,13 @@
 .project-body p { color: var(--text-muted); }
 
 /* ============================ Post / Pagina projeto ============================ */
-.project-page { max-width: 900px; margin: 0 auto; }
-.post-header { margin-bottom: 32px; }
+.project-page, .text-page { max-width: 820px; margin: 0 auto; }
+.text-page .post-header,
+.text-page .post-content { text-align: center; }
+.post-header { margin-bottom: 32px; text-align: left; }
 .post-title { font-size: 2.4rem; letter-spacing: -0.02em; }
 .post-subtitle { color: var(--text-muted); font-size: 1.1rem; margin-top: 4px; }
-.post-content { color: var(--text); }
+.post-content { color: var(--text); text-align: left; }
 .post-content p { color: var(--text-muted); }
 .post-content iframe {
   width: 100%;

@@ -16,8 +16,8 @@ Link to your social media connections, too. This theme is set up to use <a href=
 <hr/>
 <br/>
 <span class="contacticon center">
-	<a href="mailto:fpinatoaguiar@gmail.com"><i class="fa fa-envelope-square"></i></a>
-	<a href="https://github.com/tiofih" target="_blank"><i class="fa fa-github-square"></i></a>
-	<a href="https://www.linkedin.com/in/filipe-pinato-aguiar-65bab2127" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+	<a href="mailto:fpinatoaguiar@gmail.com"><i class="fas fa-envelope"></i></a>
+	<a href="https://github.com/tiofih" target="_blank"><i class="fab fa-github"></i></a>
+	<a href="https://www.linkedin.com/in/filipe-pinato-aguiar-65bab2127" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 </span>
 

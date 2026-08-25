@@ -67,6 +67,12 @@
   margin-bottom: 28px;
 }
 .hero-socials { display: flex; gap: 14px; }
+.contacticon {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 24px;
+}
 .social {
   width: 44px;
   height: 44px;
@@ -169,7 +175,7 @@
   margin: 0;
 }
 
-/* ============================ Pagina projeto ============================ */
+/* ============================ Posts / Pagina projeto ============================ */
 .project-body {
   max-width: 820px;
   margin: 0 auto;

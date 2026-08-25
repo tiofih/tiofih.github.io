@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Catvania
-description: Um projeto para a todos testar
-img: /img/12.jpg
+description: Jogo Unity — Catvania
+kind: desktop
 ---
 
-<script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "/Build/CatVania/Catvania.json");
-</script>
-<div id="gameContainer" style="width: 800px; height: 600px; margin: auto"></div>
+Protótipo de jogo em <strong>Unity</strong>. Build de teste hospedado no GitHub Pages.

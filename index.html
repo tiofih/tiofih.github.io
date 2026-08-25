@@ -2,52 +2,39 @@
 layout: default
 ---
 
-<div class="header-bar">
-    <h1>*Portfolio Filipe</h1>
-    <h2></h2>
-    <br />
-    <hr>
-    <br />
-</div>
+<section class="hero">
+  <p class="hero-eyebrow">games &amp; web apps</p>
+  <h1 class="hero-title">filipe<span class="text-accent">.</span></h1>
+  <p class="hero-subtitle">Desenvolvedor de jogos e web apps. Autômatos celulares em Godot, batalhas Pokémon com HTMX e clickers em LÖVE.</p>
+  <div class="hero-socials">
+    <a class="social" href="https://github.com/tiofih" target="_blank" rel="noopener"><i class="fa fa-github"></i></a>
+    <a class="social" href="https://www.linkedin.com/in/filipe-pinato-aguiar-65bab2127" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
+    <a class="social" href="mailto:fpinatoaguiar@gmail.com"><i class="fa fa-envelope"></i></a>
+  </div>
+</section>
 
-{% for project in site.portfolio %}
-
-{% if project.redirect %}
-<div class="project">
-    <div class="thumbnail">
-        <a href="{{ project.redirect }}" target="_blank">
-            {% if project.img %}
-            <img class="thumbnail" src="{{ project.img }}" />
-            {% else %}
-            <div class="thumbnail blankbox"></div>
-            {% endif %}
-            <span>
-                <h1>{{ project.title }}</h1>
-                <br />
-                <p>{{ project.description }}</p>
-            </span>
-        </a>
-    </div>
-</div>
-{% else %}
-
-<div class="project ">
-    <div class="thumbnail">
-        <a href="{{ site.baseurl }}{{ project.url }}">
-            {% if project.img %}
-            <img class="thumbnail" src="{{ project.img }}" />
-            {% else %}
-            <div class="thumbnail blankbox"></div>
-            {% endif %}
-            <span>
-                <h1>{{ project.title }}</h1>
-                <br />
-                <p>{{ project.description }}</p>
-            </span>
-        </a>
-    </div>
-</div>
-
-{% endif %}
-
-{% endfor %}
+<section class="projects">
+  <h2 class="section-title">projetos</h2>
+  <div class="grid">
+    {% for project in site.portfolio %}
+    <a class="card" href="{{ project.redirect | default: project.url }}" {% if project.redirect %}target="_blank" rel="noopener"{% endif %}>
+      <div class="card-media">
+        {% if project.img %}
+        <img src="{{ project.img }}" alt="{{ project.title }}">
+        {% else %}
+        <div class="card-placeholder" data-initial="{{ project.title | slice: 0, 1 }}">
+          {{ project.title | slice: 0, 1 }}
+        </div>
+        {% endif %}
+        {% if project.kind %}
+        <span class="card-badge">{{ project.kind }}</span>
+        {% endif %}
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">{{ project.title }}</h3>
+        <p class="card-description">{{ project.description }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
